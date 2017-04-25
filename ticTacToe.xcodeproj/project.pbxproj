@@ -15,6 +15,9 @@
 		8F7D5BB91EAC60DB002BC20C /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D5BB81EAC60DB002BC20C /* ex.png */; };
 		8F7D5BBB1EAC60E4002BC20C /* oh.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D5BBA1EAC60E4002BC20C /* oh.png */; };
 		8F7D5BBF1EADA85F002BC20C /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D5BBE1EADA85F002BC20C /* SingleViewController.swift */; };
+		8F7D5BC11EAEC441002BC20C /* BeginningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D5BC01EAEC441002BC20C /* BeginningViewController.swift */; };
+		8F7D5BC31EAEF0C7002BC20C /* xx.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D5BC21EAEF0C7002BC20C /* xx.png */; };
+		8F7D5BC51EAEF0CD002BC20C /* oo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D5BC41EAEF0CD002BC20C /* oo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		8F7D5BB81EAC60DB002BC20C /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
 		8F7D5BBA1EAC60E4002BC20C /* oh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oh.png; sourceTree = "<group>"; };
 		8F7D5BBE1EADA85F002BC20C /* SingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		8F7D5BC01EAEC441002BC20C /* BeginningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningViewController.swift; sourceTree = "<group>"; };
+		8F7D5BC21EAEF0C7002BC20C /* xx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xx.png; sourceTree = "<group>"; };
+		8F7D5BC41EAEF0CD002BC20C /* oo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				8F7D5BA61EAC583C002BC20C /* AppDelegate.swift */,
+				8F7D5BC01EAEC441002BC20C /* BeginningViewController.swift */,
 				8F7D5BA81EAC583C002BC20C /* ViewController.swift */,
 				8F7D5BBE1EADA85F002BC20C /* SingleViewController.swift */,
 				8F7D5BAA1EAC583C002BC20C /* Main.storyboard */,
 				8F7D5BB81EAC60DB002BC20C /* ex.png */,
 				8F7D5BBA1EAC60E4002BC20C /* oh.png */,
+				8F7D5BC21EAEF0C7002BC20C /* xx.png */,
+				8F7D5BC41EAEF0CD002BC20C /* oo.png */,
 				8F7D5BAD1EAC583C002BC20C /* Assets.xcassets */,
 				8F7D5BAF1EAC583C002BC20C /* LaunchScreen.storyboard */,
 				8F7D5BB21EAC583C002BC20C /* Info.plist */,
@@ -105,6 +114,7 @@
 				TargetAttributes = {
 					8F7D5BA21EAC583B002BC20C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GLPY7EJHQF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,8 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7D5BC31EAEF0C7002BC20C /* xx.png in Resources */,
 				8F7D5BBB1EAC60E4002BC20C /* oh.png in Resources */,
 				8F7D5BB91EAC60DB002BC20C /* ex.png in Resources */,
+				8F7D5BC51EAEF0CD002BC20C /* oo.png in Resources */,
 				8F7D5BB11EAC583C002BC20C /* LaunchScreen.storyboard in Resources */,
 				8F7D5BAE1EAC583C002BC20C /* Assets.xcassets in Resources */,
 				8F7D5BAC1EAC583C002BC20C /* Main.storyboard in Resources */,
@@ -147,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7D5BC11EAEC441002BC20C /* BeginningViewController.swift in Sources */,
 				8F7D5BBF1EADA85F002BC20C /* SingleViewController.swift in Sources */,
 				8F7D5BA91EAC583C002BC20C /* ViewController.swift in Sources */,
 				8F7D5BA71EAC583C002BC20C /* AppDelegate.swift in Sources */,
@@ -270,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GLPY7EJHQF;
 				INFOPLIST_FILE = ticTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanzaman.ticTacToe;
@@ -282,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GLPY7EJHQF;
 				INFOPLIST_FILE = ticTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanzaman.ticTacToe;

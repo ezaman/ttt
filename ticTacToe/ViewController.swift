@@ -37,9 +37,9 @@ class ViewController: UIViewController {
                 gameIsActive = false
                 
                 if gamestate[combination[0]] == 1 {
-                    outcomeLabel.text = "X wins!"
+                    outcomeLabel.text = "Player 1 wins!"
                 }else {
-                    outcomeLabel.text = "O wins!"
+                    outcomeLabel.text = "Player 2 wins!"
                 }
                 
                 playAgainButton.isHidden = false
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         gamestate = [0,0,0,0,0,0,0,0,0]
         gameIsActive = true
         activePlayer = 1
-        playAgainButton.isHidden = true
+        playAgainButton.isHidden = false
         outcomeLabel.isHidden = true
         
         for i in 1...9 {
@@ -81,22 +81,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         outcomeLabel.isHidden = true
-        playAgainButton.isHidden = true
-        // Do any additional setup after loading the view, typically from a nib.
+        playAgainButton.isHidden = false
+     
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
+
 }
-
-
-
-
-
 
 
 
@@ -123,6 +112,7 @@ class SegueFromRight: UIStoryboardSegue
         )
     }
 }
+
 
 class UIStoryboardUnwindSegueFromRight: UIStoryboardSegue {
     

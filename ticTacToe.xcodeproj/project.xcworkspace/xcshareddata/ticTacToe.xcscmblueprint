@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C78E2E553F515053F4DA5B83D08AF161EC42D533",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7A3455CB9B2B8C80FE28043703A0C2F71ED742BA" : 9223372036854775807,
+    "C78E2E553F515053F4DA5B83D08AF161EC42D533" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4BEDDFA1-0F47-46C6-8EB2-EF059DF8C584",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7A3455CB9B2B8C80FE28043703A0C2F71ED742BA" : "",
+    "C78E2E553F515053F4DA5B83D08AF161EC42D533" : "ticTacToe\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ticTacToe",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ticTacToe.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ezaman\/posseChallenge.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7A3455CB9B2B8C80FE28043703A0C2F71ED742BA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ezaman\/ttt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C78E2E553F515053F4DA5B83D08AF161EC42D533"
+    }
+  ]
+}

@@ -43,18 +43,18 @@ class SingleViewController: UIViewController {
             
             if playerTurn % 2 != 0 {
                 playerOneMoves.insert(sender.tag)
-                sender.setTitle("X", for: UIControlState.normal)
+                //sender.setTitle("X", for: UIControlState.normal)
                 sender.setImage(UIImage(named: "ex.png"), for: UIControlState.normal)
-                outcomeLabel.text = "Player 2's Turn"
+                //outcomeLabel.text = "Player 2's Turn"
                 
                 if isWinner(player: 1) == 0 {
                     
                     let nextMove = playsAI()
                     playerTwoMoves.insert(nextMove)
                     let button = self.view.viewWithTag(nextMove) as! UIButton
-                    button.setTitle("O", for: UIControlState.normal)
+                   // button.setTitle("O", for: UIControlState.normal)
                     button.setImage(UIImage(named: "oh.png"), for: UIControlState.normal)
-                    outcomeLabel.text = "Player 1's turn"
+                    //outcomeLabel.text = "Player 1's turn"
                     
                     isWinner(player: 2)
                 }
@@ -76,7 +76,7 @@ class SingleViewController: UIViewController {
         playerOneMoves.removeAll()
         playerTwoMoves.removeAll()
         
-        outcomeLabel.text = "Player1's turn"
+        outcomeLabel.isHidden = true
         playerTurn = 1
         
         for index in 1...9 {
@@ -101,7 +101,7 @@ class SingleViewController: UIViewController {
         for combination in winningCombinations {
             if moveList.contains(combination[0]) && moveList.contains(combination[1]) && moveList.contains(combination[2]) && moveList.count > 2 {
                 winner = player
-                
+                outcomeLabel.isHidden = false
                 outcomeLabel.text = "Player \(player) wins!"
                 for index in 1...9 {
                     let tile = self.view.viewWithTag(index) as! UIButton
