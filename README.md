@@ -1,4 +1,4 @@
-# ttt
+# Tic Tac Toe
 
 Welcome!
 
