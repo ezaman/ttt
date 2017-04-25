@@ -32,10 +32,6 @@ class SingleViewController: UIViewController {
     var allSpaces: Set<Int> = [1,2,3,4,5,6,7,8,9]
     
     
-    
-    
-    
-    
     @IBAction func buttonAction(_ sender: UIButton) {
         if playerOneMoves.contains(sender.tag) || playerTwoMoves.contains(sender.tag) {
             outcomeLabel.text = "Space already used"
@@ -43,18 +39,16 @@ class SingleViewController: UIViewController {
             
             if playerTurn % 2 != 0 {
                 playerOneMoves.insert(sender.tag)
-                //sender.setTitle("X", for: UIControlState.normal)
+                
                 sender.setImage(UIImage(named: "ex.png"), for: UIControlState.normal)
-                //outcomeLabel.text = "Player 2's Turn"
                 
                 if isWinner(player: 1) == 0 {
                     
                     let nextMove = playsAI()
                     playerTwoMoves.insert(nextMove)
                     let button = self.view.viewWithTag(nextMove) as! UIButton
-                   // button.setTitle("O", for: UIControlState.normal)
+                    
                     button.setImage(UIImage(named: "oh.png"), for: UIControlState.normal)
-                    //outcomeLabel.text = "Player 1's turn"
                     
                     isWinner(player: 2)
                 }
@@ -71,6 +65,8 @@ class SingleViewController: UIViewController {
         }
         
     }
+    
+    
     
     func newGame() {
         playerOneMoves.removeAll()
@@ -111,6 +107,7 @@ class SingleViewController: UIViewController {
         }
         return winner
     }
+    
     
     func playsAI() -> Int {
         var possibleLoses = Array<Array<Int>>()
@@ -178,7 +175,6 @@ class SingleViewController: UIViewController {
         
         playerTurn += 1
         
-        
         return nextMove!
     }
     
@@ -186,10 +182,8 @@ class SingleViewController: UIViewController {
     
     @IBAction func playAgain(_ sender: Any) {
         newGame()
-        
     }
     
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -201,8 +195,7 @@ class SingleViewController: UIViewController {
 
 
 
-
-
+// Custom segue class
 class UIStoryboardUnwindSegueFromRightTwo: UIStoryboardSegue {
     
     override func perform()

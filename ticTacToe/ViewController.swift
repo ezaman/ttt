@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var activePlayer  = 1
+    var activePlayer = 1
     var gamestate = [0,0,0,0,0,0,0,0,0]
     var winningCombinations = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7],[2,5,8],[2,4,6],[6,4,2],[0,4,8]]
     var gameIsActive = true
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
 
 
 
-
+// Custom segue classes
 class SegueFromRight: UIStoryboardSegue
 {
     override func perform()
